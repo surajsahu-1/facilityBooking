@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Facility Booking</title>
+</head>
+
+<body>
+    <span class="body">
+        <section id="form">
+            <h2>Booking Facility</h2>
+            <div class="facility">
+                <label for="facility">Select facility :</label>
+                <select name="" id="facility">
+                    <option value="null" disabled selected>Select</option>
+
+                    <option value="club">Clubhouse</option>
+                    <option value="tennis">Tennis Court</option>
+                </select>
+            </div>
+            <div>
+                <label for="date">Date :</label>
+                <input type="date" name="" id="date" >
+            </div>
+            <div>
+                <label for="sTime">Start Time :</label>
+                <input type="time" name="" id="sTime" >
+            </div>
+            <div>
+                <label for="eTime">End Time :</label>
+                <input type="time" name="" id="eTime" >
+            </div>
+            <div class="btn" id="btn">
+                <button onclick="booking()">Book</button>
+            </div>
+            <p id="message"></p>
+        </section>
+    </span>
+    <script src="./index.js"></script>
+</body>
+</html>
